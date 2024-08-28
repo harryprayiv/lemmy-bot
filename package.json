@@ -22,6 +22,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "lemmy-bot": "^0.6.3",
     "lemmy-js-client": "0.20.0-alpha.1",
     "node-cron": "^3.0.3",
     "sqlite3": "5.1.7"

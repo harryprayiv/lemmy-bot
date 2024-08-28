@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      lemmy-bot:
+        specifier: ^0.6.3
+        version: 0.6.3
       lemmy-js-client:
         specifier: 0.20.0-alpha.1
         version: 0.20.0-alpha.1
@@ -598,6 +601,10 @@ packages:
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
+
+  lemmy-bot@0.6.3:
+    resolution: {integrity: sha512-xtZVI4CtItec9aCH6n5oppyAA0Xyy6Ws01VLZyUxdEjvkopGdV3WxjvrR7JBr0hOqt3DKJfLttJcCG9Lkh0WjQ==}
+    engines: {node: '>=18.0.0'}
 
   lemmy-js-client@0.20.0-alpha.1:
     resolution: {integrity: sha512-0vXm/5iehW6Bq2aDkRZZAhr2lZjTvdDcrapxrl1y9Z/SGj2MyB9/sd03F1W+pHOIlbGIDYqhO0rsmCLOb1vAQQ==}
@@ -1624,6 +1631,15 @@ snapshots:
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
+
+  lemmy-bot@0.6.3:
+    dependencies:
+      lemmy-js-client: 0.20.0-alpha.1
+      node-cron: 3.0.3
+      sqlite3: 5.1.7
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
 
   lemmy-js-client@0.20.0-alpha.1: {}
 
